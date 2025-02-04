@@ -13,4 +13,11 @@ npm run start:prod
 ```
 _**Observação**: o projeto será executado na **porta 3000**._ 
 
-* **Passo 4**: No Postman, importe a coleção disponível no arquivo **postman_collection.json**. Observe que ela terá duas variáveis já preenchidas com os valores necessários: **Authorization** e **baseURL**.
+* **Passo 4**: Crie um arquivo **.env** e preencha as seguintes variáveis (lembrando que elas são genéricas, não sendo utilizadas em nenhum projeto real):
+```
+DB_USER=root
+DB_PASSWORD=admin123
+API_KEY=4561292c-10c4-4eb8-8ac0-0daeea3e9dee
+```
+
+* **Passo 5**: No Postman, importe a coleção disponível no arquivo **postman_collection.json**. Observe que ela terá duas variáveis já preenchidas com os valores necessários: **Authorization** e **baseURL**.
