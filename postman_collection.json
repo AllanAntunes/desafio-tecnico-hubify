@@ -1,0 +1,316 @@
+{
+	"info": {
+		"_postman_id": "5b0d479e-8cfe-4522-91f0-c5aeca039169",
+		"name": "Desafio técnico - Hubify",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17446308"
+	},
+	"item": [
+		{
+			"name": "Get all contacts",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseURL}}/contact",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"contact"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get contact",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseURL}}/contact/1",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"contact",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create contact",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Nome do cliente\",\n    \"email\": \"email@hubify.com.br\",\n    \"phone\": \"5511912345678\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/contact",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"contact"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update contact",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Nome do cliente\",\n    \"email\": \"email@hubify.com.br\",\n    \"phone\": \"5511912345679\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/contact/1",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"contact",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete contact",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseURL}}/contact/1",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"contact",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all deals",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseURL}}/deal",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"deal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get deal",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseURL}}/deal/1",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"deal",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create deal",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Título da negociação\",\n    \"contact_id\": \"1\",\n    \"funnel_id\": \"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/deal",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"deal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update deal",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Título da negociação\",\n    \"contact_id\": \"1\",\n    \"funnel_id\": \"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/deal/1",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"deal",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete contact",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseURL}}/deal/1",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"deal",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "Authorization",
+			"value": "4561292c-10c4-4eb8-8ac0-0daeea3e9dee",
+			"type": "string"
+		},
+		{
+			"key": "baseURL",
+			"value": "http://localhost:3000",
+			"type": "string"
+		}
+	]
+}
